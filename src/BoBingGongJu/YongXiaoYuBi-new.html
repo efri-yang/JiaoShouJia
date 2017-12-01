@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>用小鱼币</title>
+    <!-- <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script> -->
+   <script src="https://cdn.bootcss.com/jquery/1.8.0/jquery-1.8.0.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!-- 头部 start -->
+    @@include("./views/_header.html")
+    <!-- 头部 end -->
+    <div class="container-insidepage">
+        <div class="container-main">
+            <div class="main-inner clearfix">
+                <div class="pb90">
+                    <!-- 面包导航屑 start -->
+                    <div class="bread-navigation">
+                        <a href="#">小鱼网</a> > <a href="#">2017博饼</a> > 绿巨能 欧菲医疗美容博饼区
+                    </div>
+                    <!-- 面包导航屑 end -->
+                    <ul class="bb-logo clearfix">
+                        <li class="active">
+                            <a href="#"><img src="upload/logo_1.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="upload/logo_1.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="upload/logo_1.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="upload/logo_1.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="upload/logo_1.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="upload/logo_1.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="upload/logo_1.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="upload/logo_1.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="upload/logo_1.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="upload/logo_1.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="upload/logo_1.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="upload/logo_1.png" /></a>
+                        </li>
+                    </ul>
+                    <div class="bb-company">
+                        <span class="tit">欧菲医疗美容博饼区 欧菲医疗美容博饼区欧菲医疗美容博饼区欧菲医疗美容博饼区欧菲医疗美容博饼区</span>
+                        <div class="fr">
+                            <span class="score">今日博饼分：0 </span>
+                            <span class="rank">排名：100名以外 </span>
+                            <a href="#" class="more">查看排名详情>></a>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="bb-advert-company mt20">
+                            <a href="#" class="pic">
+                                <img src="upload/bb_advert.jpg" />
+                                 <span class="tip">点击广告，领取5个小鱼币（限一次）</span>
+                            </a>
+                           
+                        </div>
+                        <div class="bb-rock-box">
+                            <div class="bb-rock-result">一秀 +1博饼分</div>
+                            <a href="HuoDongGuiZe.html" class="bb-rock-rule">活动规则</a>
+                            <div class="bb-rock-run">
+                                <a href="#" class="arrow prev"></a>
+                                <a href="#" class="arrow next"></a>
+                                <div class="bowl-box">
+                                     <span class="loaded"></span>
+                                     <span class="company-logo"><img src="images/bowl_logo.png" /></span>
+                                     <div class="bowl"  id="J_bowl-box"></div>
+                                </div>
+
+                                <span class="hand-normal" id="J_plam"></span>
+                            </div>
+
+                            
+
+
+                            <div class="bb-rock-para">
+                                <div class="item">
+                                    <span>剩余次数：0</span>
+                                    <span class="add" id="J_add-num">增加次数</span>
+                                </div>
+                                <div class="item">
+                                    <span>小鱼币：2450</span>
+                                    <a href="#" class="gain" id="J_gain-yb">赚鱼币</a>
+                                </div>
+                            </div>
+                            <div class="bb-rock-dhway">
+                                <p class="tit">今日次数已用完，可用小鱼币继续博饼</p>
+                                <div class="dropdown-box" data-roler="dropdown">
+                                    <cite>一倍博饼分 / 5个小鱼币</cite>
+                                    <i class="arrow"></i>
+                                    <ul>
+                                        <li><a href="#" selid="1">项目1111111111111111111111111111111111111111111111111</a></li>
+                                        <li><a href="#" selid="2">项目222222</a></li>
+                                        <li><a href="#" selid="3">项目333333</a></li>
+                                        <li><a href="#" selid="4">项目444444</a></li>
+                                        <li><a href="#" selid="5">项目555555</a></li>
+                                        <li><a href="#" selid="6">项目666666</a></li>
+                                        <li><a href="#" selid="7">项目777777</a></li>
+                                        <li><a href="#" selid="8">项目888888</a></li>
+                                    </ul>
+                                    <input type="hidden" id="J_dropselhidden" data-required="true" data-descriptions="projects">
+                                </div>
+                            </div>
+                            <div class="bb-rock-slide">
+                                <span class="line"></span>
+                                <input type="hidden" value="1" class="slideunlock-lockable" />
+                                <div class="slideunlock-slider unselectable">
+                                    <span class="slideunlock-bg" id="J_slideunlock-bg"></span>
+                                    <span class="slideunlock-label" id="J_slideunlock-btn1">搏一搏</span>
+                                    <span class="slideunlock-lable-tip" id="J_slideunlock-lable-tip"><b><i></i>向右滑动博饼</b></span>
+                                    <span class="slideunlock-statu" id="J_slideunlock-statu"></span>
+                                </div>
+                            </div>
+                            <button class="slideunlock-label-2 disabled" type="button" id="J_slideunlock-btn2"></button>
+                            <div class="undis">
+                                     <!-- 声音 -->
+    <div id="jquery_jplayer_0" class="jp-jplayer"></div>
+    <div id="jp_container_0" class="jp-audio" role="application" aria-label="media player"><button class="jp-play" id="J_jp-play0" role="button" tabindex="0"></button></div>
+
+    <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+    <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player"><button class="jp-play" id="J_jp-play1" role="button" tabindex="1"></button></div>
+
+    <div id="jquery_jplayer_2" class="jp-jplayer"></div>
+    <div id="jp_container_2" class="jp-audio" role="application" aria-label="media player"><button class="jp-play" id="J_jp-play2" role="button" tabindex="2"></button></div>
+
+
+    <div id="jquery_jplayer_3" class="jp-jplayer"></div>
+    <div id="jp_container_3" class="jp-audio" role="application" aria-label="media player"><button class="jp-play" id="J_jp-play3" role="button" tabindex="3"></button></div>
+
+    <div id="jquery_jplayer_4" class="jp-jplayer"></div>
+    <div id="jp_container_4" class="jp-audio" role="application" aria-label="media player"><button class="jp-play" id="J_jp-play4" role="button" tabindex="4"></button></div>
+
+    <div id="jquery_jplayer_5" class="jp-jplayer"></div>
+    <div id="jp_container_5" class="jp-audio" role="application" aria-label="media player"><button class="jp-play" id="J_jp-play5" role="button" tabindex="5"></button></div>
+
+    <div id="jquery_jplayer_6" class="jp-jplayer"></div>
+    <div id="jp_container_6" class="jp-audio" role="application" aria-label="media player"><button class="jp-play" id="J_jp-play6" role="button" tabindex="6"></button></div>
+
+    <div id="jquery_jplayer_rock" class="jp-jplayer"></div>
+    <div id="jp_container_rock" class="jp-audio" role="application" aria-label="media player"><button class="jp-play" id="J_jp-play-rock" role="button" tabindex="7"></button></div>
+
+
+    <!--  声音-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tit-type-4 mt10">
+                        <span class="tit">商家优惠促销</span>
+                        <span class="sub-tit">登陆信息可领取5个小鱼币（限一次）</span>
+                    </div>
+                    <div class="dj-form-box">
+                        <p class="txt1">美容意向登记</p>
+                        <p class="txt2">优惠内容：凭此券登记信息可到店领取<b>1000</b>元整容大礼包</p>
+                        <div class="form">
+                          <form>
+                            <div class="item">
+                                <span class="para-tit">姓名：</span>
+                                <input type="text" class="ipt-text"   />
+                            </div>
+                            <div class="item">
+                                <span class="para-tit">手机：</span>
+                                <input type="text" class="ipt-text" />
+                            </div>
+                            <div class="item">
+                                <span class="para-tit">职业：</span>
+                                <input type="text" class="ipt-text" />
+                            </div>
+                            <div class="item">
+                                <span class="para-tit">意向多选：</span>
+                                <label class="lab"><input type="checkbox" class="ipt-checkbox iconfont">双眼皮</label>
+                                <label class="lab"><input type="checkbox" class="ipt-checkbox iconfont">隆胸</label>
+                                <label class="lab"><input type="checkbox" class="ipt-checkbox iconfont">垫鼻</label>
+                                <label class="lab"><input type="checkbox" class="ipt-checkbox iconfont">抽脂</label>
+                            </div>
+                            <div class="item align-c pt15">
+                                
+                                <input type="submit" class="ipt-submit"  value="登 记">
+                            </div>
+                            </form>
+                        </div>
+
+                        <div class="form">
+                          <form>
+                            <div class="item">
+                                <span class="para-tit">姓名：</span>
+                                <input type="text" class="ipt-text" disabled value="余一涛"   />
+                            </div>
+                            <div class="item">
+                                <span class="para-tit">手机：</span>
+                                <input type="text" class="ipt-text" disabled value="13705030789" />
+                            </div>
+                            <div class="item">
+                                <span class="para-tit">职业：</span>
+                                <input type="text" class="ipt-text" disabled value="产品经理" />
+                            </div>
+                            <div class="item">
+                                <span class="para-tit">意向多选：</span>
+                                <label class="lab"><input type="checkbox" checked disabled class="ipt-checkbox iconfont">双眼皮</label>
+                                <label class="lab"><input type="checkbox" disabled class="ipt-checkbox iconfont">隆胸</label>
+                                <label class="lab"><input type="checkbox" disabled class="ipt-checkbox iconfont">垫鼻</label>
+                                <label class="lab"><input type="checkbox" disabled class="ipt-checkbox iconfont">抽脂</label>
+                            </div>
+                            <div class="item align-c pt15">
+                                
+                                <input type="submit" class="ipt-submit" disabled value="您已登记，无需重负登记">
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="tit-type-4 mt10">
+                        <span class="tit">商家优惠促销</span>
+                        <span class="sub-tit">登陆信息可领取5个小鱼币（限一次）</span>
+                    </div>
+                    <div class="dj-form-box-zdy">
+                        <p class="zdy-caption">注册潮人租车</p>
+                        <p class="zdy-tip1">可领价值998元小鱼博饼专属大礼包，并可参与潮人租车会员专属包厢、VIP会员包厢，赢取超值礼品。</p>
+                        <div class="result-tip">
+                             <p class="result-txt-1"><span>恭喜你，注册成功！</span></p>
+                             <ul class="qr-list">
+                                <li class="item-1">
+                                    <div class="pic"><img src="./images/zdy_qrcode_1.jpg"></div>
+                                    <p class="txt">潮人专属包厢</p>
+                                </li>
+                                <li class="item-2">
+                                    <div class="pic"><img src="./images/zdy_qrcode_2.jpg"></div>
+                                    <p class="txt">潮人VIP包厢</p>
+                                </li>
+                             </ul>
+                        </div>
+
+                        <div class="form">
+                          <form>
+                            
+                            <div class="item">
+                                <span class="para-tit">手机：</span>
+                                <input type="text" class="ipt-text" placeholder="请输入11位手机号码" />
+                            </div>
+                            <div class="item zdy-item-yzm">
+                                <span class="para-tit">验证码：</span>
+                                <input type="text" class="ipt-text"  placeholder="请输入验证码"  />
+                                <button type="button" class="yzm-btn">获取验证码</button>
+                                <!-- <button type="button" class="yzm-btn disabled" disabled>(59)重新获取</button> -->
+                            </div>
+                            
+                            <div class="item align-c pt15">
+                                <input type="submit" class="ipt-submit zdy-ipt-submit"  value="免费租车">
+                            </div>
+                            </form>
+                        </div>
+
+                        
+                        
+                    </div>
+
+
+
+
+                    <div class="tit-type-1 mt30">
+                        <p class="txt-czw"></p>
+                    </div>
+                    <table class="bb-tbl-czw mt20">
+                        <thead>
+                            <tr>
+                                <th width="150">科举</th>
+                                <th width="200">常用名</th>
+                                <th width="355">图示</th>
+                                <th>会品说明</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="7">状元</td>
+                                <td>状元插金花</td>
+                                <td class="align-l">
+                                    <span class="dice-num num-4"></span>
+                                    <span class="dice-num num-4"></span>
+                                    <span class="dice-num num-4"></span>
+                                    <span class="dice-num num-4"></span>
+                                    <span class="dice-num num-1"></span>
+                                    <span class="dice-num num-1"></span>
+                                </td>
+                                <td>加博饼分80个</td>
+                            </tr>
+                            <tr>
+                                
+                                <td>六杯红</td>
+                                <td class="align-l">
+                                    <span class="dice-num num-4"></span>
+                                    <span class="dice-num num-4"></span>
+                                    <span class="dice-num num-4"></span>
+                                    <span class="dice-num num-4"></span>
+                                    <span class="dice-num num-4"></span>
+                                    <span class="dice-num num-4"></span>
+                                </td>
+                                <td>加博饼分60个</td>
+                                
+                            </tr>
+                            <tr>
+                                
+                                <td>六杯黑</td>
+                                <td class="align-l">
+                                    <span class="dice-num num-6"></span>
+                                    <span class="dice-num num-6"></span>
+                                    <span class="dice-num num-6"></span>
+                                    <span class="dice-num num-6"></span>
+                                    <span class="dice-num num-6"></span>
+                                    <span class="dice-num num-6"></span>
+                                </td>
+                                <td>加博饼分50个</td>
+                                
+                            </tr>
+                            <tr>
+                                
+                                <td>五王</td>
+                                <td class="align-l">
+                                    <span class="dice-num num-4"></span>
+                                    <span class="dice-num num-4"></span>
+                                    <span class="dice-num num-4"></span>
+                                    <span class="dice-num num-4"></span>
+                                    <span class="dice-num num-4"></span>
+                                </td>
+                                <td>加博饼分45</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>五子带一秀</td>
+                                <td class="align-l">
+                                    <span class="dice-num num-3"></span>
+                                    <span class="dice-num num-3"></span>
+                                    <span class="dice-num num-3"></span>
+                                    <span class="dice-num num-3"></span>
+                                    <span class="dice-num num-3"></span>
+                                    <span class="dice-num num-4"></span>
+                                </td>
+                                <td>加博饼分40个</td>
+                            </tr>
+                            <tr>
+                                <td>五子登科</td>
+                                <td class="align-l">
+                                    <span class="dice-num num-3"></span>
+                                    <span class="dice-num num-3"></span>
+                                    <span class="dice-num num-3"></span>
+                                    <span class="dice-num num-3"></span>
+                                    <span class="dice-num num-3"></span>
+                                </td>
+                                <td>加博饼分35个</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>状元</td>
+                                <td class="align-l">
+                                    <span class="dice-num num-4"></span>
+                                    <span class="dice-num num-4"></span>
+                                    <span class="dice-num num-4"></span>
+                                    <span class="dice-num num-4"></span>
+                                </td>
+                                <td>加博饼分30个</td>
+                            </tr>
+
+                            <tr>
+                                <td>榜眼</td>
+                                <td>对堂</td>
+                                <td class="align-l">
+                                    <span class="dice-num num-1"></span>
+                                    <span class="dice-num num-2"></span>
+                                    <span class="dice-num num-3"></span>
+                                    <span class="dice-num num-4"></span>
+                                    <span class="dice-num num-5"></span>
+                                    <span class="dice-num num-6"></span>
+                                </td>
+                                <td>加博饼分15个</td>
+                            </tr>
+                            <tr>
+                                <td>探花</td>
+                                <td>三红</td>
+                                <td class="align-l">
+                                    <span class="dice-num num-4"></span>
+                                    <span class="dice-num num-4"></span>
+                                    <span class="dice-num num-4"></span>
+                                </td>
+                                <td>加博饼分8个</td>
+                            </tr>
+                            <tr>
+                                <td>进士</td>
+                                <td>四进</td>
+                                <td class="align-l">
+                                    <span class="dice-num num-2"></span>
+                                    <span class="dice-num num-2"></span>
+                                    <span class="dice-num num-2"></span>
+                                    <span class="dice-num num-2"></span>
+                                </td>
+                                <td>加博饼分4个</td>
+                            </tr>
+                            <tr>
+                                <td>举人</td>
+                                <td>二举</td>
+                                <td class="align-l">
+                                    <span class="dice-num num-4"></span>
+                                    <span class="dice-num num-4"></span>
+                                </td>
+                                <td>加博饼分2个</td>
+                            </tr>
+                            <tr>
+                                <td>秀才</td>
+                                <td>一秀</td>
+                                <td class="align-l">
+                                    <span class="dice-num num-4"></span>
+                                </td>
+                                <td>加博饼分1个</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="tit-type-2 mt20">
+                        <span class="tit">活动规则</span>
+                        <a href="#" class="more">更 多>></a>
+                    </div>
+                    <div class="rule-coms">
+                        <ul>
+                            <li>
+                                <span class="num">1</span>
+                                <p class="txt">线上博饼时间为2017年9月1日-9月30日，共30天；</p>
+                            </li>
+                            <li>
+                                <span class="num">2</span>
+                                <p class="txt">单日所有包厢（包括微信、小鱼客户端渠道）总积分前15名获得线下博饼入场券一张，合计450张；</p>
+                            </li>
+                            <li>
+                                <span class="num">3</span>
+                                <p class="txt">网页端与客户端及微信的H5包厢博饼将保持一致，同一个账号下博饼次数和博饼分数据将同步进行；</p>
+                            </li>
+                            <li>
+                                <span class="num">4</span>
+                                <p class="txt">总冠名赞助商包厢每日可免小鱼币博饼次数为20次/ID，王中王赞助商包厢每日可免小鱼币博饼次数为15次/ID，VIP赞助商包厢每日可免小鱼币博 饼次数为10次/ID；
+                                </p>
+                            </li>
+                            <li>
+                                <span class="num">5</span>
+                                <p class="txt">免费博饼机会用完后，可使用小鱼币增加博饼次数，根据不同的押注倍数消耗不同的小鱼币，如押注一倍博饼分将消耗5个小鱼币。倍数越高，获得 的博饼分也越高。
+                                </p>
+                            </li>
+                            <li>
+                                <span class="num">6</span>
+                                <p class="txt">若出现单日博饼分排名并列的情况，则当日最先参与线上博饼的ID胜出；</p>
+                            </li>
+                            <li>
+                                <span class="num">7</span>
+                                <p class="txt">为保证活动奖项让更多的参与者获得，活动期间每人（同个小鱼账号、手机号码、身份证号码、设备 ID 均视为同一个人）只能获得一个线下博饼入 场券名额，如遇重复，则去除后面获得的资格，获奖ID顺延。
+                                </p>
+                            </li>
+                            <li>
+                                <span class="num">8</span>
+                                <p class="txt">禁言（禁访）ID、魅力值为负数ID无法参加线上博饼；</p>
+                            </li>
+                            <li>
+                                <span class="num">9</span>
+                                <p class="txt">参与博饼的会员，应该遵守公平竞争原则，若利用程序漏洞对网站进行攻击或者非正常获利者，小鱼网有权收回非正常获利部分，并有权视对活动的 影响情节轻重，对相关ID进行警告、禁言和禁访；
+                                </p>
+                            </li>
+                            <li>
+                                <span class="num">10</span>
+                                <p class="txt">小鱼网在法律允许的范围内，保留对本次活动的最终解释。</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 活动规则 end -->
+
+                    <div class="bb-advert"><a href="#"><img src="./upload/avatart_2.jpg"></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer start -->
+    @@include("./views/_footer.html")
+    <!-- footer end -->
+    <!-- 大牌福利 start -->
+    <div class="bb-dpfl">
+        <div class="inner">
+           <p class="txt1">大牌福利</p>
+           <p class="txt2">抢到就是赚到</p>
+           <a href="#" class="guide-btn">去抢福利</a>
+        </div>
+    </div>
+    <!-- 大牌福利 end -->
+    <!-- 增加次数弹出框 start -->
+    <div class="bb-dia-wrap" id="J_bb-dia-qrcode">
+        <div class="bb-dia-inner">
+            <a href="#" class="close"></a>
+            <div class="bb-dia-hd"></div>
+            <div class="bb-dia-qrcode">
+                <div class="pic"></div>
+                <p class="txt">分享包厢到微信朋友圈，即可增加一次博饼次数</p>
+                <a href="#" class="close-qrcode">确定</a>
+            </div>
+        </div>
+        <span class="bg-up"></span>
+    </div>
+    <!-- 增加次数弹出框 end -->
+    <!-- 赚鱼刺币弹出框 start -->
+    <div class="bb-dia-wrap" id="J_bb-dia-zyb">
+        <div class="bb-dia-inner">
+            <a href="#" class="close"></a>
+            <div class="bb-dia-hd"></div>
+            <div class="bb-dia-zyb">
+                <p class="txt">分享包厢到微信朋友圈，即可增加一次博饼次数</p>
+                <a href="#" class="close-qrcode">确定</a>
+            </div>
+        </div>
+        <span class="bg-up"></span>
+    </div>
+    <!-- 赚鱼刺币弹出框 end -->
+
+   
+   <!--  <script type="text/javascript" src="js/jquery.slideunlock.js"></script> -->
+    <script type="text/javascript" src="js/layer/layer.js"></script>
+    <script type="text/javascript" src="js/jplayer/jquery.jplayer.min.js"></script>
+    <script type="text/javascript" src="js/bblock.js"></script>
+  
+
+
+</body>
+
+</html>

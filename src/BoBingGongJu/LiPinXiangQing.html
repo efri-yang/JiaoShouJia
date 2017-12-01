@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>排名</title>
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!-- 头部 start -->
+    @@include("./views/_header.html")
+    <!-- 头部 end -->
+    <div class="container-insidepage">
+        <div class="container-main">
+            <div class="main-inner clearfix">
+                <div class="pb90">
+                    <!-- 面包导航屑 start -->
+                    <div class="bread-navigation">
+                        <a href="#">小鱼网</a> > <a href="#">2017博饼</a> > <a href="#">礼品兑换</a> > 绿巨能 小火箭急速车载快充急速车载快充
+                    </div>
+                    <!-- 面包导航屑 end -->
+                    <div class="clearfix mt10">
+                        <div class="lpxq-banner">
+                            
+                                <ul id="J_banner_1">
+                                   
+                                    <li>
+                                        <a href="#" target="_blank"><img src="upload/bb_advert.jpg" onload="LoadImage(this,383,258)"></a>
+                                    </li>
+                                    
+                                </ul>
+                        </div>
+                        <div class="lpxq-handle">
+                                <p class="name">绿巨能 小火箭急速车载快充急速车载快充</p>
+                                <div class="para-box">
+                                    <p class="item">所需博饼分： <b class="score">35</b>分</p>
+                                    <p class="item">原价： <b class="money">200元</b></p>
+                                    <p class="item">剩余： <b class="remain">2458</b> (每人限兑换一件)</p>
+                                </div>
+                                <div class="handle-btn">
+                                    <a href="#" class="btn-coms btn-clr28b28b" id="J_ljdh">立即兑换</a>
+                                    <!-- <a href="#" class="btn-coms btn-clrffb500" id="J_djzj">登记中奖信息</a> -->
+                                    <a href="#" class="btn-coms btn-clr59a9ec">8折购买商品</a>
+                                </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tit-type-2 mt30">
+                        <span class="tit">礼品详情</span>
+                        
+                    </div>
+                    <div class="dh-detail-intro mt20">
+                        <img src="images/dh_detail_1.jpg">
+
+                    </div>
+                    <div class="tit-type-2 mt10">
+                        <span class="tit">兑换规则</span>
+                        <a href="#" class="more">更 多>></a>
+                    </div>
+                    <div class="rule-coms">
+                        <p class="sub-tit mb10">一、关于奖品兑换</p>
+                        <ul>
+                            <li>
+                                <span class="num">1</span>
+                                <p class="txt">2017年9月19日10:00—9月26日23:59，可用相应博饼分进行兑换奖品，先兑先得，兑完为止；</p>
+                            </li>
+                             <li>
+                                <span class="num">2</span>
+                                <p class="txt">2017年9月19日10:00—9月30日23:59，可用相应博饼分兑换小鱼币（35:1），逾期未做兑换的博饼分将自动失效。</p>
+                            </li>
+                             <li>
+                                <span class="num">3</span>
+                                <p class="txt">博饼分的消耗不会影响会员已经获得的线下博饼资格；</p>
+                            </li>
+                        </ul>
+                        <p class="sub-tit mb10 mt30">一、关于奖品兑换</p>
+                        <p class="three-tit mb10">实物奖品：</p>
+                        <ul>
+                            <li>
+                                <span class="num">1</span>
+                                <p class="txt">已兑换的奖品鱼鱼们别忘了在中奖登记页面登记好领取奖品的信息，如未登记将无法领取奖品。<a href="#">立即登记>></a>；</p>
+                            </li>
+                             <li>
+                                <span class="num">2</span>
+                                <div class="txt">
+                                    <p>领取时间：2017年9月26日-10月30日，逾期作废；</p>
+                                    <p class="mt5">*  上门自取：请在工作日9:00~18:00至厦门思明区软件园二期望海路59号501室厦门小鱼网领取奖品。需提供本人身份证或社保卡/手机号码进行核实，如
+代领需要携带对方的身份证或社保卡/手机号码/所获奖品截图，联系电话0592-2517171，如何前往小鱼网， <a href="#">请点击这里>></a></p><p class="mt5">*  快递到付：我们将在9月19日后陆续将奖品寄出，邮费自理。</p></div>
+                            </li>
+                             <li>
+                                <span class="num">3</span>
+                                <p class="txt">如有其他领取方式我们将在奖品介绍中进行说明，请注意查看。</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 活动规则 end -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer start -->
+    @@include("./views/_footer.html")
+    <!-- footer end -->
+    <!--  -->
+    <div class="dia-ljdh-box" id="J_dia-ljdh-box">
+    	<!-- 信息为填写 -->
+    	<div class="dia-ljdh-form">
+			<p class="hd-tit">领奖信息</p>
+			<div class="form-item">
+				<label class="lab">姓名</label>
+                <input type="text" class="ipt-text">
+			</div>
+			<div class="form-item">
+				<label class="lab">手机</label>
+                <input type="text" class="ipt-text">
+			</div>
+			<div class="form-item">
+				<label class="lab">身份证号码</label>
+                <input type="text" class="ipt-text">
+			</div>
+
+			<div class="form-item-lqfs">
+                <span class="para-tit">礼品领取方式：</span>
+                <label class="lab"><input type="radio"  checked="" name="getway">自取</label>
+                <label class="lab"><input type="radio" name="getway">邮寄</label>   
+            </div>
+
+            <div class="form-item-address J_toggle-address">
+                <span class="para-tit">自取地址：</span>
+                <label>厦门思明区软件园二期望海路59号501室厦门小鱼网</label>
+            </div>
+            <div class="form-item-address address-zdy J_toggle-address undis">
+                <span class="para-tit">请输入收货地址：</span>
+                <textarea class="address"></textarea>
+            </div>
+    	</div>
+    	<!-- 信息已经填写 -->
+		<div class="dia-ljdh-form">
+			<p class="hd-tit">领奖信息</p>
+			<div class="dia-ljdh-intro">
+				<span class="intro-item">姓名：小鱼</span>
+				<span class="intro-item">电话：15803578758</span>
+				<span class="intro-item">身份证：350628789508230525</span>
+				<span class="intro-item">自取：厦门市软件园二期望海路59号之1-501</span>
+			</div>
+		</div>
+    	<!-- 信息已经填写 end-->
+    	<p class="tjsl-hd-tit">兑换数量</p>
+        <div class="item clearfix">
+            <div class="para-val">
+                <span class="reduce"></span>
+                <input type="text" class="ipt-text" value="1" />
+                <span class="plus"></span>
+                <span class="tip">(仅限兑换一件)</span>
+            </div>
+        </div>
+        <div class="item clearfix">
+            <label class="lab">所需要博饼分：<b class="score">35分</b></label>
+        </div>
+        <div class="item clearfix align-c mt20">
+            <input type="submit" class="btn-coms btn-clrff5266 ipt-submit" value="确认">
+        </div>
+    </div>
+    <!--  -->
+
+    <!--  -->
+     <div class="dia-gmdj-box" id="J_dia-gmdj-box">
+        <p class="txt-1">亲爱的YUYU，您对本商品具有兴趣是我们的荣幸，请留下您的信息，我们的销售人员将会第一时间
+与您联系</p>
+<p class="txt-1">凭此登记信息您将享受本商品专属5折优惠，折扣：<b class="money">￥50</b>，原价：<b  class="money">￥250</b></p>
+        <div class="forms">
+            <!--  未登记的时候 -->
+            <!-- <div class="clearfix">
+                <div class="item">
+                    <label class="lab">姓名：</label>
+                    <input type="text" class="ipt-text ipt-name">
+                </div>
+                <div class="item">
+                    <label class="lab">电话：</label>
+                    <input type="text" class="ipt-text ipt-phone">
+                </div>
+            </div>
+
+            <div class="handle-btn">
+                <a href="#" class="btn-coms btn-clrf52d44">立即登记</a>
+            </div> -->
+            <!-- 登记的时候 -->
+           <div class="clearfix">
+                 <div class="item">
+                    <label class="lab">姓名：</label>
+                    <input type="text" class="ipt-text ipt-name" disabled value="某某某">
+                </div>
+                <div class="item">
+                    <label class="lab">电话：</label>
+                    <input type="text" class="ipt-text ipt-phone" disabled value="13850269633">
+                </div>
+           </div>
+
+        </div>
+     </div>
+    <!--  -->
+    <script type="text/javascript" src="js/layer/layer.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        // $("#J_banner_1").bannerSlider({
+        //     width: 383, //宽 (如果100%的时候请传入字符串)
+        //     height:258, //高
+        //     auto: false, //是否能自动滚
+        //     effect: "slider", //效果
+        //     Pause: 10000, //停顿时间-两个动画滚动间隔的时间
+        //     animTime:250,
+        //     //一张图滚动的时间
+        //     zIndex: 10, //设置层级相互遮盖
+        //     parentClass: "lpxq-banner",
+        //     LoadScale:true,
+        //     pagination: {
+        //         show: false,
+        //         className: "banner-numlist"
+        //     },
+        //     btn: {
+        //         show: true,
+        //         dynamic: false //是否有鼠标移动上去显示箭头的效果
+        //     },
+        //     describe: {
+        //         show: false
+        //     }
+        // });
+
+        (function(){
+            $("#J_ljdh").on("click",function(){
+                layer.open({
+                      type: 1,
+                      shade: [0.8, '#000'],
+                      shadeClose:true,
+                      area:"540px",
+                      title:"兑换确认", //不显示标题
+                      content:$("#J_dia-ljdh-box") //捕获的元素，注意：最好该指定的元素要存放在body最外层，否则可能被其它的相对元素所影响
+                      
+                    });
+            });
+        })();
+
+        // (function(){
+        //     $("#J_djzj").on("click",function(){
+        //         layer.open({
+        //           type: 1,
+        //           shade: [0.8, '#000'],
+        //           area:"660px",
+        //           shadeClose:true,
+        //           title:"购买本商品登记", //不显示标题
+        //           content:$("#J_dia-gmdj-box"), //捕获的元素，注意：最好该指定的元素要存放在body最外层，否则可能被其它的相对元素所影响
+                  
+        //         });
+        //     })
+        // })();
+
+        //自取 邮寄单机效果
+            (function(){
+                 var $relateItem=$("#J_dia-ljdh-box .J_toggle-address"),
+                     $radios=$("#J_dia-ljdh-box input[name='getway']");
+                 $radios.on("click",function(){
+                    var $this=$(this),
+                        index=$radios.index($this);
+                       
+                        $relateItem.hide().eq(index).show();  
+                })
+            })();
+
+            (function(){
+            	var $tab=$(".dia-ljdh-form .form-item > .lab");
+            	var $input=$(".dia-ljdh-form .form-item > .ipt-text");
+            	$tab.each(function(){
+            		var $this=$(this);
+            		var $ipt=$this.siblings('.ipt-text');
+            		$this.on("click",function(){
+            			$this.hide();
+            			$ipt.focus();
+            		})
+            	});
+            	$input.each(function(index, el) {
+            		var $this=$(this);
+            		var $lab=$this.siblings('.lab');
+            		$this.on("foucs",function(){
+            			$lab.hide();
+            		}).on("blur",function(){
+            			var val=$(this).val();
+            			if(!$.trim(val)){
+            				$lab.show();
+            			}
+            		})
+            	});
+            })()
+    });
+    </script>
+</body>
+
+</html>

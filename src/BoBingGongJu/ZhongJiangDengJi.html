@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>中奖登记</title>
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+
+<body>
+    <!-- 头部 start -->
+    @@include("./views/_header.html")
+    <!-- 头部 end -->
+    <div class="container-insidepage">
+        <div class="container-main">
+            <div class="main-inner clearfix">
+                
+                    <!-- 面包导航屑 start -->
+                    <div class="bread-navigation">
+                        <a href="#">小鱼网</a> > <a href="#">2017博饼</a> > 我的博饼
+                    </div>
+                    <!-- 面包导航屑 end -->
+                    <div class="sub-container">
+                        @@include("./views/_aside.html")
+                        <div class="sub-main-box">
+                           
+
+                            <div class="tit-type-5">
+                                <span class="tit">中奖登记</span>
+                                <span class="zjdj-tit-tip"><b>*</b> 9月30日之后将关闭信息修改功能</span>
+                            </div>
+                            <div class="zjdj-tip-box">需凭登记的信息领取兑换的礼品和线下博饼门票，请确保信息的准确性并保护好自己的隐私
+小鱼网第十一届博饼嘉年华暨第四届手机博饼消费节。</div>
+                            <div class="zjdj-form" id="J_zjdj-form">
+                                <div class="item">
+                                    <span class="para-tit">姓名：</span>
+                                    <input type="text" class="ipt-text" placeholder="请输入您的姓名">
+                                </div>
+                                <div class="item">
+                                    <span class="para-tit">手机：</span>
+                                    <input type="text" class="ipt-text" placeholder="请输入您的手机">
+                                </div>
+                                <div class="item">
+                                    <span class="para-tit">身份证号码：</span>
+                                    <input type="text" class="ipt-text" placeholder="请输入您的身份证号码">
+                                </div>
+                                <div class="item lqfs">
+                                    <span class="para-tit">礼品领取方式：</span>
+                                    <label class="lab"><input type="radio" data-relateid="J_zq-address" checked name="getway">自取</label>
+                                    <label class="lab"><input type="radio" name="getway" data-relateid="J_sh-address">邮寄</label>   
+                                </div>
+                                <div class="item J_toggle-address">
+                                    <span class="para-tit">自取地址：</span>
+                                    <label>厦门思明区软件园二期望海路59号501室厦门小鱼网</label>
+                                </div>
+                                 <div class="item sh-address undis J_toggle-address">
+                                    <span class="para-tit">请输入收货地址：</span>
+                                    <textarea class="address"></textarea>
+                                </div>
+                                <div class="item">
+                                    <input type="submit" class="ipt-submit" value="提交">
+                                </div>
+                            </div>
+
+                            <!-- 不可编辑状态 -->
+                            <div class="zjdj-form" id="J_zjdj-form">
+                                <div class="item">
+                                    <span class="para-tit">姓名：</span>
+                                    <input type="text" class="ipt-text" placeholder="请输入您的姓名" value="杨某某" disabled>
+                                    <a href="#" class="edit">修改</a>
+                                </div>
+                                <div class="item">
+                                    <span class="para-tit">手机：</span>
+                                    <input type="text" class="ipt-text" placeholder="请输入您的手机" value="15080568748" disabled>
+                                </div>
+                                <div class="item">
+                                    <span class="para-tit">身份证号码：</span>
+                                    <input type="text" class="ipt-text" placeholder="请输入您的身份证号码" value="3506****************0538" disabled>
+                                </div>
+                                <div class="item lqfs">
+                                    <span class="para-tit">礼品领取方式：</span>
+                                    <label class="lab"><input type="radio" checked name="getway" disabled>自取</label>
+                                    <label class="lab"><input type="radio" name="getway" disabled>邮寄</label>   
+                                </div>
+                                <div class="item J_toggle-address">
+                                    <span class="para-tit">自取地址：</span>
+                                    <label>厦门思明区软件园二期望海路59号501室厦门小鱼网</label>
+                                </div>
+                                 <div class="item sh-address undis J_toggle-address">
+                                    <span class="para-tit">请输入收货地址：</span>
+                                    <textarea class="address"></textarea>
+                                </div>
+                                <div class="item">
+                                    <input type="submit" class="ipt-submit" value="提交" disabled>
+                                </div>
+                            </div>
+                            <!-- 不可编辑状态 -->
+
+
+
+
+                            
+                            
+                            
+
+                            
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+        <!-- footer start -->
+        @@include("./views/_footer.html")
+        <!-- footer end -->
+      
+
+    <script type="text/javascript">
+        $(function(){
+            //下拉列表插件调用
+            dropdownPlugin(".search-condition-box .time");
+            dropdownPlugin(".search-condition-box .baoxiang");
+
+            //自取 邮寄单机效果
+            (function(){
+                 var $relateItem=$(".J_toggle-address"),
+                     $radios=$("#J_zjdj-form input[name='getway']");
+                 $radios.on("click",function(){
+                    var $this=$(this),
+                        index=$radios.index($this);
+                        console.dir(index);
+                        $relateItem.hide().eq(index).show();  
+                })
+            })()
+        })
+    </script>
+</body>
+
+</html>

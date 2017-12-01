@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>联机PK</title>
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!-- 头部 start -->
+    @@include("./views/_header.html")
+    <!-- 头部 end -->
+    <div class="container-insidepage">
+        <div class="container-main">
+            <div class="main-inner clearfix">
+                
+                    <!-- 面包导航屑 start -->
+                    <div class="bread-navigation">
+                        <a href="#">小鱼网</a> > <a href="#">2017博饼</a> > 我的博饼
+                    </div>
+                    <!-- 面包导航屑 end -->
+                    <div class="ljpk-page">
+                        <p class="ljpk-caption">博饼新玩法</p>
+                        <div class="ljpk-qrcode">
+                            <div class="pic"></div>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+        <!-- footer start -->
+        @@include("./views/_footer.html")
+        <!-- footer end -->
+      
+
+    <script type="text/javascript">
+        $(function(){
+            //下拉列表插件调用
+            dropdownPlugin(".search-condition-box .time");
+            dropdownPlugin(".search-condition-box .baoxiang");
+        })
+    </script>
+</body>
+
+</html>

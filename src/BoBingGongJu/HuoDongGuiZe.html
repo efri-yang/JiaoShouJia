@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>排名</title>
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!-- 头部 start -->
+    @@include("./views/_header.html")
+    <!-- 头部 end -->
+    <div class="container-insidepage">
+        <div class="container-main">
+            <div class="main-inner clearfix">
+                
+                    <!-- 面包导航屑 start -->
+                    <div class="bread-navigation">
+                        <a href="#">小鱼网</a> > <a href="#">2017博饼</a> > 活动规则
+                    </div>
+                    <!-- 面包导航屑 end -->
+                    <div class="sub-container">
+                        <div class="aside-box">
+                            <ul class="aside-hdgz-list">
+                                <li class="active"><a href="javascript:void(0)"><span>博饼总规则</span></a></li>
+                                <li><a href="javascript:void(0)" ><span>赚取小鱼币规则</span></a></li>
+                                <li><a href="javascript:void(0)" ><span>增加博饼次数规则</span></a></li>
+                                <li><a href="javascript:void(0)"><span>礼品兑换规则</span></a></li>
+                                <li><a href="javascript:void(0)" ><span>线下博饼门票领取规则</span></a></li>
+                                <li><a href="javascript:void(0)" ><span>大牌福利抽奖规则</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="sub-main-box">
+
+                            <div class="tit-type-5">   
+                                <span class="tit">博饼总规则</span>
+                            </div>
+                            <div class="intro-type-1">
+                                <p><span class="num">1、</span>线上博饼时间为2017年9月1日-9月30日，共30天；</p>
+                                <p><span class="num">2、</span>单日所有包厢（包括微信、小鱼客户端渠道）总积分前15名获得线下博饼入场券一张，合计450张；</p>
+                                <p><span class="num">3、</span>网页端与客户端及微信的H5包厢博饼将保持一致，同一个账号下博饼次数和博饼分数据将同步进行；</p>
+                                <p><span class="num">4、</span>总冠名赞助商包厢每日可免小鱼币博饼次数为20次/ID，王中王赞助商包厢每日可免小鱼币博饼次数为15次 /ID，VIP赞助商包厢每日可免小鱼币博饼次数为10次/ID；
+                                </p>
+                                <p><span class="num">5、</span>免费博饼机会用完后，可使用小鱼币增加博饼次数，根据不同的押注倍数消耗不同的小鱼币，如押注一倍博 饼分将消耗5个小鱼币。倍数越高，获得的博饼分也越高。
+                                </p>
+                                <p><span class="num">6、</span>若出现单日博饼分排名并列的情况，则当日最先参与线上博饼的ID胜出；</p>
+                                <p><span class="num">7、</span>为保证活动奖项让更多的参与者获得，活动期间每人（同个小鱼账号、手机号码、身份证号码、设备 ID 均 视为同一个人）只能获得一个线下博饼入场券名额，如遇重复，则去除后面获得的资格，获奖ID顺延。
+                                </p>
+                                <p><span class="num">8、</span>禁言（禁访）ID、魅力值为负数ID无法参加线上博饼；</p>
+                                <p><span class="num">9、</span>参与博饼的会员，应该遵守公平竞争原则，若利用程序漏洞对网站进行攻击或者非正常获利者，小鱼网有权 收回非正常获利部分，并有权视对活动的影响情节轻重，对相关ID进行警告、禁言和禁访；
+                                </p>
+                                <p><span class="num">10、</span> 小鱼网在法律允许的范围内，保留对本次活动的最终解释。</p>
+                            </div>
+                            <div class="tit-type-5" >
+                                <a name="J_zjbbcs"></a>
+                                <span class="tit">赚取小鱼币规则</span>
+                            </div>
+                            <div class="intro-type-1">
+                                <p><span class="num">1、</span>点击博饼包厢页中的「banner 广告」可获得5个小鱼币，每个博饼包厢活动期间限一次。</p>
+                                <p><span class="num">2、</span>登记博饼包厢页中的「商家优惠促销」可获得5个小鱼币，每个博饼包厢活动期间限一次。</p>
+                            </div>
+                            <div class="tit-type-5" id="section-3">
+                                <span class="tit">增加博饼次数规则</span>
+                            </div>
+                            <div class="intro-type-1">
+                                <p><span class="num">1、</span>使用微信或小鱼客户端分享博饼包厢页至微信朋友圈或微信好友，可额外获得1次博饼机会。</p>
+                                <p><span class="num">2、</span>增加的博饼次数只可在分享的包厢页中使用，如分享欧菲包厢则只增加欧菲包厢的博饼次数。</p>
+                                <p><span class="num">3、</span>每天每个包厢最多可额外获得1次博饼次数。</p>
+                            </div>
+                            <div class="tit-type-5">
+                                <span class="tit">礼品兑换规则</span>
+                            </div>
+                            <div class="intro-type-1">
+                                <div class="sub-tit">一、关于奖品兑换</div>
+                                <p><span class="num">1、</span> 2017年9月19日10:00—9月26日23:59，可用相应博饼分进行兑换奖品，先兑先得，兑完为止；
+                                </p>
+                                <p><span class="num">2、</span> 2017年9月19日10:00—9月30日23:59，可用相应博饼分兑换小鱼币（35:1），逾期未做兑换的博饼分将自 动失效。
+                                </p>
+                                <p><span class="num">3、</span>博饼分的消耗不会影响会员已经获得的线下博饼资格；</p>
+                                <div class="sub-tit">二、关于奖品领取</div>
+                                <p class="three-tit">实物奖品：</p>
+                                <p><span class="num">1、</span>已兑换的奖品鱼鱼们别忘了在中奖登记页面登记好领取奖品的信息,如未登记将无法领取奖品。<a href="#">立即登记>></a><p>
+                                <p><span class="num">2、</span>领取时间：2017年9月26日-10月30日，逾期作废;<p>
+                                </p>
+                                <p>*上门自取：请在工作日9:00~18:00至厦门思明区软件园二期望海路59号501室厦门小鱼网领取奖品。需提供
+     本人身份证或社保卡/手机号码进行核实，如代领需要携带对方的身份证或社保卡/手机号码/所获奖品截图，
+     联系电话0592-2517171，如何前往小鱼网， <a href="#">请点击这里>></a><p>
+     <p>*快递到付：我们将在9月19日后陆续将奖品寄出，邮费自理。</p>
+                                <p><span class="num">3、</span>如有其他领取方式我们将在奖品介绍中进行说明，请注意查看。<p>
+                                </p>
+                                </p>
+                            </div>
+                            <div class="tit-type-5" >
+                                <span class="tit">线下博饼门票领取规则</span>
+                            </div>
+                            <div class="intro-type-1">
+                                <p><span class="num">1、</span> 如已获得线下博饼门票，请及时登记您的信息，如未登记将无法领取门票。<a href="#">立即登记>></a>
+                                </p>
+                                <p><span class="num">2、</span>已登记信息的用户请耐心等待具体领取地址的通知，通知将会以手机短信、论坛私信通知、论坛置顶帖子告示、APP 推送等方式传达，请注意查收。
+                                </p>
+                            </div>
+                             <div class="tit-type-5">
+                                <span class="tit">大牌福利抽奖规则</span>
+                            </div>
+                            <div class="intro-type-1">
+                                <p><span class="num">1、</span> 线上抢福利时间：2017年9月6日至9月30日。
+                                </p>
+                                <p><span class="num">2、</span> 线下抽奖时间：线下王中王博饼当天（暂定2017年10月14日）。
+                                </p>
+                                <p><span class="num">3、</span> 登记抢福利时间需填写手机号码、姓名等信息，每个登记成功用户将会获得一个唯一编号。
+                                </p>
+                                <p><span class="num">4、</span> 为保证活动公平，每人只能获得3个抽奖编号，请选择你最需要的福利吧。
+                                </p>
+                                <p><span class="num">5、</span> 线下抽奖时由人工以现场直播的形式抽取出相应福利所对应的编号来确定最终中奖人，我们也会通过短信的形式通知中奖情况。
+                                </p>
+                                <p><span class="num">6、</span> 本活动最终解释权归小鱼网所有。
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+        <!-- footer start -->
+        @@include("./views/_footer.html")
+        <!-- footer end -->
+        
+
+  
+    <script type="text/javascript">
+        $(function(){
+            var $titType=$(".sub-main-box .tit-type-5")
+            $(".aside-hdgz-list li").on("click",function(){
+                $(this).addClass("active").siblings().removeClass("active");
+                var index=$(".aside-hdgz-list li").index(this);
+                var scrollTop=$titType.eq(index).offset().top-70;
+                $(window).scrollTop(scrollTop);
+            });
+            $(window).on("scroll",function(){
+                var scrollTop=$(this).scrollTop();
+                if(scrollTop>130){
+                    $(".aside-box .aside-hdgz-list").addClass('scrollFixed')
+                }else{
+                    $(".aside-box .aside-hdgz-list").removeClass('scrollFixed')
+                }
+
+            })
+           
+        })
+    </script>
+</body>
+
+</html>

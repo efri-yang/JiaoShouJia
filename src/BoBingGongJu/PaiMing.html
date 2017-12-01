@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>排名</title>
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!-- 头部 start -->
+    @@include("./views/_header.html")
+    <!-- 头部 end -->
+    <div class="container-insidepage">
+        <div class="container-main">
+            <div class="main-inner clearfix">
+                <div class="pb90">
+                    <!-- 面包导航屑 start -->
+                    <div class="bread-navigation">
+                        <a href="#">小鱼网</a> > <a href="#">2017博饼</a> > 博饼排名
+                    </div>
+                    <!-- 面包导航屑 end -->
+                    <div class="clearfix">
+                        <div class="score-rank-today">
+                            <div class="tit-type-3">
+                                <span class="lab">今日总博饼分</span>
+                                <div class="date-picker-type1" id="J_datetimepicker-box-1">
+                                    <span class="datetimer" id="J_datetimepicker-1-val"></span>
+                                    <input type="text" class="ipt-text" id="J_datetimepicker-1" />
+                                    <span class="arrow"></span>
+                                </div>
+                            </div>
+
+                            <ul class="score-rank-ftbl clearfix thead">
+                                <li class="item item-1">名次</li>
+                                <li class="item item-2">ID</li>
+                                <li class="item item-3">分数</li>
+                                <li class="item item-4"></li>
+                            </ul>
+                            <div class="today-tbody-scroller" id="J_today-tbody-scroller">
+                                <div class="score-rank-ftbl tbody">
+                                    <div class="rk-item clearfix">
+                                        <div class="item item-1"><span class="num num-1">1</span></div>
+                                        <div class="item item-2">爱我就来抱抱我爱我就来抱抱我</div>
+                                        <div class="item item-3">2586分</div>
+                                        <div class="item item-4"><a href="#" class="detail">查看详情</a></div>
+                                    </div>
+                                    <div class="rk-item clearfix">
+                                        <div class="item item-1"><span class="num num-2">2</span></div>
+                                        <div class="item item-2">爱我就来抱抱我爱我就来抱抱我</div>
+                                        <div class="item item-3">2586分</div>
+                                        <div class="item item-4"><a href="#" class="detail">查看详情</a></div>
+                                    </div>
+                                    <div class="rk-item clearfix">
+                                        <div class="item item-1"><span class="num num-3">3</span></div>
+                                        <div class="item item-2">爱我就来抱抱我爱我就来抱抱我</div>
+                                        <div class="item item-3">2586分</div>
+                                        <div class="item item-4"><a href="#" class="detail">查看详情</a></div>
+                                    </div>
+                                    <div class="rk-item clearfix">
+                                        <div class="item item-1"><span class="num">4</span></div>
+                                        <div class="item item-2">爱我就来抱抱我爱我就来抱抱我</div>
+                                        <div class="item item-3">2586分</div>
+                                        <div class="item item-4"><a href="#" class="detail">查看详情</a></div>
+                                    </div>
+                                    <div class="rk-item clearfix">
+                                        <div class="item item-1"><span class="num">5</span></div>
+                                        <div class="item item-2">爱我就来抱抱我爱我就来抱抱我</div>
+                                        <div class="item item-3">2586分</div>
+                                        <div class="item item-4"><a href="#" class="detail">查看详情</a></div>
+                                    </div>
+
+                                    <div class="rk-item clearfix">
+                                        <div class="item item-1"><span class="num">6</span></div>
+                                        <div class="item item-2">爱我就来抱抱我爱我就来抱抱我</div>
+                                        <div class="item item-3">2586分</div>
+                                        <div class="item item-4"><a href="#" class="detail">查看详情</a></div>
+                                    </div>
+
+                                    <div class="rk-item clearfix">
+                                        <div class="item item-1"><span class="num">7</span></div>
+                                        <div class="item item-2">爱我就来抱抱我爱我就来抱抱我</div>
+                                        <div class="item item-3">2586分</div>
+                                        <div class="item item-4"><a href="#" class="detail">查看详情</a></div>
+                                    </div>
+
+                                    <div class="rk-item clearfix">
+                                        <div class="item item-1"><span class="num">8</span></div>
+                                        <div class="item item-2">爱我就来抱抱我爱我就来抱抱我</div>
+                                        <div class="item item-3">2586分</div>
+                                        <div class="item item-4"><a href="#" class="detail">查看详情</a></div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            <ul class="score-rank-ftbl tfoot">
+                                 <li class="clearfix">
+                                    <div class="item item-1"><span class="num num-1">24158</span></div>
+                                    <div class="item item-2">爱我就来抱抱我爱我就来抱抱我</div>
+                                    <div class="item item-3">2586分</div>
+                                    <div class="item item-4"><a href="#" class="detail">查看详情</a></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="score-total-box">
+                            <div class="tit-type-3">
+                                <span class="lab">总博饼分排名</span>
+                            </div>
+                            <ul class="score-rank-ftbl clearfix thead">
+                                <li class="item item-1">名次</li>
+                                <li class="item item-2">ID</li>
+                                <li class="item item-3">分数</li>
+                                <li class="item item-4"></li>
+                            </ul>
+                            <div class="total-tbody-scroller" id="J_total-tbody-scroller">
+                             <div class="score-rank-ftbl tbody">
+                                <div class="rk-item clearfix">
+                                    <div class="item item-1"><span class="num num-1">1</span></div>
+                                    <div class="item item-2">爱我就来抱抱我爱我就来抱抱我</div>
+                                    <div class="item item-3">2586分</div>
+                                    <div class="item item-4"><a href="#" class="detail">查看详情</a></div>
+                                </div>
+                                <div class="rk-item clearfix">
+                                    <div class="item item-1"><span class="num num-2">2</span></div>
+                                    <div class="item item-2">爱我就来抱抱我爱我就来抱抱我</div>
+                                    <div class="item item-3">2586分</div>
+                                    <div class="item item-4"><a href="#" class="detail">查看详情</a></div>
+                                </div>
+                                <div class="rk-item clearfix">
+                                    <div class="item item-1"><span class="num num-3">3</span></div>
+                                    <div class="item item-2">爱我就来抱抱我爱我就来抱抱我</div>
+                                    <div class="item item-3">2586分</div>
+                                    <div class="item item-4"><a href="#" class="detail">查看详情</a></div>
+                                </div>
+                                <div class="rk-item clearfix">
+                                    <div class="item item-1"><span class="num">4</span></div>
+                                    <div class="item item-2">爱我就来抱抱我爱我就来抱抱我</div>
+                                    <div class="item item-3">2586分</div>
+                                    <div class="item item-4"><a href="#" class="detail">查看详情</a></div>
+                                </div>
+                                <div class="rk-item clearfix">
+                                    <div class="item item-1"><span class="num">5</span></div>
+                                    <div class="item item-2">爱我就来抱抱我爱我就来抱抱我</div>
+                                    <div class="item item-3">2586分</div>
+                                    <div class="item item-4"><a href="#" class="detail">查看详情</a></div>
+                                </div>
+
+                                <div class="rk-item clearfix">
+                                    <div class="item item-1"><span class="num">6</span></div>
+                                    <div class="item item-2">爱我就来抱抱我爱我就来抱抱我</div>
+                                    <div class="item item-3">2586分</div>
+                                    <div class="item item-4"><a href="#" class="detail">查看详情</a></div>
+                                </div>
+                               
+                                </div>
+                            </div>
+                            <ul class="score-rank-ftbl tfoot">
+                                 <li class="clearfix">
+                                    <div class="item item-1"><span class="num num-1">24158</span></div>
+                                    <div class="item item-2">爱我就来抱抱我爱我就来抱抱我</div>
+                                    <div class="item item-3">2586分</div>
+                                    <div class="item item-4"><a href="#" class="detail">查看详情</a></div>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <div class="tit-type-3 mt30">
+                        <span class="lab">中奖名单</span>
+                    </div>
+                    <table class="prize-rank-table">
+                        <thead>
+                            <tr>
+                                <th width="200">时间</th>
+                                <th>中奖名单</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="align-c">2017-09-01</td>
+                                <td><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span></td>
+                            </tr>
+                            <tr>
+                                <td class="align-c">2017-09-02</td>
+                                <td><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span></td>
+                            </tr>
+                            <tr>
+                                <td class="align-c">2017-09-03</td>
+                                <td><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span></td>
+                            </tr>
+                            <tr>
+                                <td class="align-c">2017-09-04</td>
+                                <td><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span><span>VAN</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <!-- footer start -->
+    @@include("./views/_footer.html")
+    <!-- footer end -->
+    <link rel="stylesheet" type="text/css" href="./js/datetimepicker/jquery.datetimepicker.css">
+    <script type="text/javascript" src="./js/datetimepicker/jquery.datetimepicker.js"></script>
+    <script type="text/javascript" src="./js/datetimepicker/jquery.datetimepicker.full.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="js/mCustomScrollbar/jquery.mCustomScrollbar.css">
+    <script type="text/javascript" src="js/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script> -->
+
+    <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.source.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $.datetimepicker.setLocale('ch');
+        var $datetimepicker1 = $('#J_datetimepicker-1');
+        $datetimepicker1.datetimepicker({
+            format: 'Y-m-d',
+            timepicker: false,
+            yearStart: 2017,
+            yearEnd: 2017,
+            value: new Date(),
+            monthStart: 0,
+            monthEnd: 11,
+            todayButton: false,
+            prevButton: false,
+            nextButton: false,
+            closeOnDateSelect: true,
+            onSelectDate: function() {
+                $("#J_datetimepicker-1-val").html($datetimepicker1.val());
+                alert("ajax 请求写在这里！！！");
+                //$(".content").mCustomScrollbar("scrollTo",0);
+            }
+        });
+        $("#J_datetimepicker-1-val").html($datetimepicker1.val());
+        $("#J_datetimepicker-box-1").on("click", function() {
+            $datetimepicker1.datetimepicker("show");
+        });
+
+
+        function DaySlideEffect(){
+                $("#J_today-tbody-scroller").slide({
+                    mainCell:".tbody",
+                    effect:"topMarquee",
+                    autoPlay:true,
+                    vis:5,
+                    interTime:50
+                });   
+        }
+
+        function totalSlideEffect(){
+                $("#J_total-tbody-scroller").slide({
+                    mainCell:".tbody",
+                    effect:"topMarquee",
+                    autoPlay:true,
+                    vis:5,
+                    interTime:50
+                });   
+        }
+        DaySlideEffect();
+        totalSlideEffect();
+        //在切换日期的时候时候，重新渲染<div class="score-rank-ftbl tbody"></div> 也要从新渲染插入到容器中，否则滚动动画会有问题
+
+        // $("#x1").on("click",function(){
+        //     $("#J_today-tbody-scroller").html('<div class="score-rank-ftbl tbody"><div class="rk-item clearfix"><div class="item item-1"><span class="num num-1">11111111111</span></div><div class="item item-2">爱我就来抱抱我爱我就来抱抱我</div><div class="item item-3">2586分</div><div class="item item-4"><a href="#" class="detail">查看详情</a></div></div><div class="rk-item clearfix"><div class="item item-1"><span class="num num-2">2</span></div><div class="item item-2">爱我就来抱抱我爱我就来抱抱我</div><div class="item item-3">2586分</div><div class="item item-4"><a href="#" class="detail">查看详情</a></div></div><div class="rk-item clearfix"><div class="item item-1"><span class="num num-3">3</span></div><div class="item item-2">爱我就来抱抱我爱我就来抱抱我</div><div class="item item-3">2586分</div><div class="item item-4"><a href="#" class="detail">查看详情</a></div></div><div class="rk-item clearfix"><div class="item item-1"><span class="num">4</span></div><div class="item item-2">爱我就来抱抱我爱我就来抱抱我</div><div class="item item-3">2586分</div><div class="item item-4"><a href="#" class="detail">查看详情</a></div></div><div class="rk-item clearfix"><div class="item item-1"><span class="num">5</span></div><div class="item item-2">爱我就来抱抱我爱我就来抱抱我</div><div class="item item-3">2586分</div><div class="item item-4"><a href="#" class="detail">查看详情</a></div></div><div class="rk-item clearfix"><div class="item item-1"><span class="num">6</span></div><div class="item item-2">爱我就来抱抱我爱我就来抱抱我</div><div class="item item-3">2586分</div><div class="item item-4"><a href="#" class="detail">查看详情</a></div></div></div>');
+        //         DaySlideEffect();
+        // })
+
+    })
+    </script>
+</body>
+
+</html>
